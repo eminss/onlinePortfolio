@@ -118,16 +118,40 @@ main section {
 }
 
 .workCards .imageText {
-    position: absolute;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
     background-color: rgb(228, 228, 228);
     border: 1px solid black;
-    bottom: 0px;
-    left: 625px;
     font-size: 20px;
     width: 150px;
     height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    transition: all .3s ease-in-out;
 }
 
+.workCards .imageText:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+    border: 1px solid black;
+    font-size: 23px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    /* text-decoration: none; */
+    color: rgb(95, 95, 95);
+    transition: all .3s ease-in-out;
+}
+
+#imageTitle {
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .workCards img:hover {
     color: black;
@@ -195,4 +219,9 @@ main section {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
     margin-right: 75px;
+}
+
+#wikiOnBored {
+    max-width: 1200px;
+    max-height: 500px;
 }
